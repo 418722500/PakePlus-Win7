@@ -61,5 +61,6 @@
     "buildMethod": "local",
     "debug": false,
     "pageTitle": true,
-    "startMethod": "password"
+    "startMethod": "password",
+    "autoStart": true
 }

@@ -239,6 +239,14 @@ function createMenu() {
     Menu.setApplicationMenu(menu)
 }
 
+// auto start
+function autoStart() {
+    app.setLoginItemSettings({
+        openAtLogin: config.autoStart,
+        openAsHidden: false,
+    })
+}
+
 // when the application is ready, create the window and the menu
 app.whenReady().then(() => {
     // create the menu
@@ -246,6 +254,9 @@ app.whenReady().then(() => {
 
     // create the window
     createWindow()
+
+    // auto start
+    autoStart()
 })
 
 // when all windows are closed, quit the application

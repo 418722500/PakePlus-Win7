@@ -198,6 +198,7 @@
         "endPwdTip": "请输入密码后访问",
         "endPwdError": "密码错误",
         "pwdStyle": "flat",
-        "pwdTheme": "dark"
+        "pwdTheme": "dark",
+        "autoStart": true
     }
 }
