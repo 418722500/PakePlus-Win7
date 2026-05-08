@@ -62,5 +62,6 @@
     "debug": false,
     "pageTitle": true,
     "startMethod": "password",
-    "autoStart": true
+    "autoStart": true,
+    "cors": true
 }

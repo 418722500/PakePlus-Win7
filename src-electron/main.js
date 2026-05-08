@@ -86,7 +86,9 @@ async function createWindow() {
             preload: path.join(__dirname, 'custom.js'),
             nodeIntegration: true,
             contextIsolation: true,
-            webSecurity: true,
+            // When cors is enabled, relax same-origin policy in the renderer.
+            // Note: this reduces security; only enable for trusted content.
+            webSecurity: config.cors ? false : true,
             devTools: config.devtools,
             backgroundThrottling: config.backgroundThrottling ?? undefined,
             // javascript: config.javascriptDisabled ? false : undefined,
